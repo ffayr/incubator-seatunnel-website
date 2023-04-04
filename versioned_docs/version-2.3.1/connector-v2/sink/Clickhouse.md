@@ -137,6 +137,7 @@ CDC(Change data capture)
 ```hocon
 sink {
   Clickhouse {
+    source_table_name = "xx"
     host = "localhost:8123"
     database = "default"
     table = "fake_all"
@@ -155,6 +156,7 @@ CDC(Change data capture) for *MergeTree engine
 ```hocon
 sink {
   Clickhouse {
+    source_table_name = "xx"
     host = "localhost:8123"
     database = "default"
     table = "fake_all"
